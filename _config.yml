@@ -1,0 +1,43 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: Pivot
+co_name: Pivot
+# description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "http://martche.ca"
+
+# Build settings
+markdown: kramdown
+# permalink: pretty
+permalink: /:categories/:title
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+pageColor: "#0d2b37"
+colors:  #in hex code if not noted else
+  primary: "#00c690"
+  primary_rgb: "white"
+  secondary: "#fff"
+  footer: "#072531"
+  footer_color: "#1a4353"
+  font_color: "#00c690"
+  link: "#00c690"
+  link_hover: "#00c690"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+  
+  
+### CONTACT SETTINGS ###
+
+
+sitemap:
+  file: "/sitemap2.xml"
+  exclude:
+      - "/atom.xml"
+      - "/feed.xml"
+      - "/feed/index.xml"
+  include_posts:
+      - "/index.html"
+
+keywords: "desenvolvimento, desenvolvimento web, servidor, segurança, hospedagem, ecommerce, e-commerce"

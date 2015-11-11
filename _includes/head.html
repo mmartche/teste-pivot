@@ -1,0 +1,52 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="{{ site.title }}">
+    <link rel="shortcut icon" href="{{ "/assets/favicon.ico" | prepend: site.baseurl }}">
+
+    <meta name="google-site-verification" content="{{ site.google-site-verification }}" />
+
+    <meta name="keywords" content="{{ site.keywords }}" />
+    <meta itemprop="url" content="http://" />
+    <meta itemprop="telephone" content="+55(11)99909-6556" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ "/assets/img/browser-globe.png" | prepend: site.baseurl }}" />
+
+    <title itemprop="name">{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ "/assets/css/bootstrap.css" | prepend: site.baseurl }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ "/assets/css/style.css" | prepend: site.baseurl }}" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{ site.google-analytics }}', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/{{ site.url }}\/","name":"{{ site.title }}","potentialAction":{"@type":"SearchAction","target":"http:\/\/{{ site.url }}\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+    <script src="{{ "/assets/js/modernizr.js" | prepend: site.baseurl }}"></script>
+</head>
